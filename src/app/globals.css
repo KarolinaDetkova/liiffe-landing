@@ -829,3 +829,29 @@ footer {
   .combo-flow { flex-direction: column; gap: 16px; }
   .combo-plus, .combo-equals { transform: rotate(90deg); }
 }
+
+@media (max-width: 768px) {
+  /* Packages */
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Types */
+  .types-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* CTA */
+  .cta-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cta-right {
+    align-items: center;
+  }
+
+  .cta-left h2 {
+    font-size: 28px;
+  }
+}
