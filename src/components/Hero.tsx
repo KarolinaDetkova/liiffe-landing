@@ -40,8 +40,8 @@ export default function Hero() {
       <Image
       src="/Mobile.png"
       alt="Liiffe Mobile"
-      width={160}
-      height={280}
+      width={100}
+      height={220}
       className="hero-mobile"
     />
   </div>
