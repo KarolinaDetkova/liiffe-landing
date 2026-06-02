@@ -513,6 +513,124 @@ nav {
 }
 .result-item .ri-desc { font-size: 11px; color: rgba(255, 255, 255, 0.5); line-height: 1.5; }
 
+/* COMBO MOBILE */
+.combo-desktop { display: block; }
+.combo-mobile { display: none; }
+
+.combo-mobile-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.combo-steps-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.combo-step-pill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.combo-arrow {
+  color: #ccc;
+  margin-left: 4px;
+}
+
+.combo-results-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* CAROUSEL */
+.combo-carousel {
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.combo-carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.combo-carousel-card {
+  min-width: 100%;
+  background: var(--navy);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.combo-card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.combo-card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.3;
+}
+
+.combo-card-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.6;
+}
+
+/* DOTS */
+.combo-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.combo-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(26,35,64,0.2);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.combo-dot.active {
+  background: var(--pink);
+  width: 24px;
+  border-radius: 4px;
+}
+
 /* ── SECTION 4: CUATRO PAQUETES ── */
 .section-packages {
   padding: 80px 60px;
@@ -831,6 +949,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+  /* Combo section */
+  .combo-desktop { display: none; }
+  .combo-mobile { display: block; }
+
   /* Packages */
   .packages-grid {
     grid-template-columns: 1fr;
@@ -847,7 +970,7 @@ footer {
 
   .packages-header h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .packages-sub {
