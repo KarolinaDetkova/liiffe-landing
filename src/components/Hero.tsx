@@ -28,12 +28,13 @@ export default function Hero() {
             height={500}
             style={{ width: '100%', height: 'auto' }}
           />
-          <Image
+        <Image
             src="/Mobile.png"
             alt="Liiffe Mobile"
             width={100}
             height={220}
             className="hero-mobile"
+            style={{ width: 'auto', height: 'auto', maxWidth: '25%' }}
           />
         </div>
       </div>
