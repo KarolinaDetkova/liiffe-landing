@@ -836,6 +836,25 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /* Packages header */
+  .packages-header img {
+    display: none;
+  }
+
+  .packages-header {
+    justify-content: center;
+  }
+
+  .packages-header h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .packages-sub {
+    text-align: center;
+    margin-left: 0;
+  }
+
   /* Types */
   .types-grid {
     grid-template-columns: repeat(2, 1fr);
