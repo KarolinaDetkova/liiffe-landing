@@ -3,11 +3,11 @@
 import { useState } from 'react'
 
 const sources = [
-  { id: 'booking', label: 'Booking.com', sub: 'Expedia · Hotels', color: '#e91e8c', angle: 200 },
-  { id: 'sitio', label: 'Sitio Web', sub: 'Direct traffic', color: '#a78bfa', angle: 230 },
-  { id: 'otas1', label: 'OTA', sub: 'Kayak · TripAdvisor', color: '#00b4d8', angle: 260 },
-  { id: 'otas2', label: 'GDS', sub: 'Sabre · Amadeus', color: '#a78bfa', angle: 290 },
-  { id: 'social', label: 'Redes Sociales', sub: 'Instagram · TikTok', color: '#e91e8c', angle: 320 },
+  { id: 'booking', label: 'Booking.com', sub: 'Expedia · Hotels', color: '#e91e8c', angle: 200, connects: ['email', 'fidelizacion'] },
+  { id: 'sitio', label: 'Sitio Web', sub: 'Direct traffic', color: '#a78bfa', angle: 230, connects: ['email', 'encuestas'] },
+  { id: 'otas1', label: 'OTA', sub: 'Kayak · TripAdvisor', color: '#00b4d8', angle: 260, connects: ['reviews', 'fidelizacion'] },
+  { id: 'otas2', label: 'GDS', sub: 'Sabre · Amadeus', color: '#a78bfa', angle: 290, connects: ['pms', 'encuestas'] },
+  { id: 'social', label: 'Redes Sociales', sub: 'Instagram · TikTok', color: '#e91e8c', angle: 320, connects: ['email', 'reviews'] },
 ]
 
 const outputs = [
