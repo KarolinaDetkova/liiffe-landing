@@ -35,6 +35,15 @@ body {
 .hl-cyan   { color: var(--cyan); }
 .hl-purple { color: #a78bfa; }
 
+/* ── SCROLL OFFSET ── */
+#inicio,
+#huesped,
+#asi-empieza,
+#por-que-liiffe,
+#paquetes,
+#soluciones {
+  scroll-margin-top: 89px;
+}
 
 /* ══════════════════════════════════════════
    NAV

@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <GuestSection />
+        <GuestSection imageSrc="/user icon.jpg" />
         <AsiEmpiezaTodo />
         <ComboSection />
         <PackagesSection />
