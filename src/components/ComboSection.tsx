@@ -3,98 +3,116 @@
 import Image from 'next/image'
 import { useState } from 'react'
 
-const results = [
+const steps = [
   {
-    icon: '📈',
-    title: 'Incrementa el gasto por huésped',
-    desc: 'Recomendaciones y ofertas personalizadas que aumentan el ticket medio.',
+    icon: '📊',
+    label: 'DATA',
     color: '#e91e8c',
+    desc: 'Todos los datos de tus huéspedes en un solo lugar.',
+    borderColor: '#e91e8c',
+    bg: 'rgba(233,30,140,0.08)',
   },
   {
-    icon: '🛒',
-    title: 'Impulsa la venta de servicios',
-    desc: 'Más reservas de restaurante, spa, actividades y experiencias.',
+    icon: '🧠',
+    label: 'INTELIGENCIA',
+    color: '#7b2d8b',
+    desc: 'Convertimos datos en información accionable para decidir mejor.',
+    borderColor: '#7b2d8b',
+    bg: 'rgba(123,45,139,0.08)',
+  },
+  {
+    icon: '👤',
+    label: 'PERSONALIZACIÓN',
     color: '#00b4d8',
+    desc: 'Creamos experiencias únicas para cada huésped, en el momento perfecto.',
+    borderColor: '#00b4d8',
+    bg: 'rgba(0,180,216,0.08)',
   },
   {
-    icon: '⭐',
-    title: 'Mejora la experiencia del huésped',
-    desc: 'Información relevante en el momento adecuado para cada cliente.',
-    color: '#a78bfa',
-  },
-  {
-    icon: '🔄',
-    title: 'Aumenta la fidelización y la repetición',
-    desc: 'Los huéspedes vuelven cuando sienten que les conoces.',
-    color: '#e91e8c',
-  },
-  {
-    icon: '🔍',
-    title: 'Obtén una visión 360° de tus huéspedes',
-    desc: 'Toda la información centralizada, segmentada y accesible en tiempo real.',
-    color: '#00b4d8',
+    icon: '🌿',
+    label: 'SOSTENIBILIDAD',
+    color: '#27ae60',
+    desc: 'Optimizamos recursos y operaciones para un hotel más eficiente y rentable.',
+    borderColor: '#27ae60',
+    bg: 'rgba(39,174,96,0.08)',
   },
 ]
 
-const steps = [
-  { icon: '📊', label: 'DATA', color: '#e91e8c' },
-  { icon: '👥', label: 'PERSONALIZACIÓN', color: '#7b2d8b' },
-  { icon: '✨', label: 'EXPERIENCIA', color: '#00b4d8' },
-  { icon: '🌿', label: 'SOSTENIBILIDAD', color: '#27ae60' },
-  { icon: '📈', label: 'REVENUE', color: '#e91e8c' },
-]
+const result = {
+  icon: '📈',
+  label: 'INGRESOS',
+  color: '#e91e8c',
+  desc: 'Más valor por huésped y mejores resultados para tu alojamiento.',
+  borderColor: '#e91e8c',
+  bg: 'rgba(233,30,140,0.08)',
+}
+
+const mobileCards = [...steps, result]
 
 export default function ComboSection() {
   const [active, setActive] = useState(0)
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    const touch = e.touches[0]
-    ;(e.currentTarget as HTMLElement).dataset.startX = String(touch.clientX)
+    ;(e.currentTarget as HTMLElement).dataset.startX = String(e.touches[0].clientX)
   }
 
   const handleTouchEnd = (e: React.TouchEvent) => {
     const startX = Number((e.currentTarget as HTMLElement).dataset.startX)
-    const endX = e.changedTouches[0].clientX
-    const diff = startX - endX
-    if (diff > 50 && active < results.length - 1) setActive(active + 1)
+    const diff = startX - e.changedTouches[0].clientX
+    if (diff > 50 && active < mobileCards.length - 1) setActive(active + 1)
     if (diff < -50 && active > 0) setActive(active - 1)
   }
 
   return (
     <section className="section-combo" id="por-que-liiffe">
-      {/* DESKTOP: SVG */}
+
+      {/* DESKTOP */}
       <div className="combo-desktop">
-        <Image
-          src="/Body.svg"
-          alt="El Combo Liiffe"
-          width={1400}
-          height={600}
-          style={{ width: '100%', height: 'auto' }}
-        />
+        <div className="combo-header">
+          <h2 className="combo-heading">
+            EL COMBO <span className="hl-pink">LIIFFE</span>
+          </h2>
+          <p className="combo-heading-sub">Nuestra fórmula para convertir datos en ingresos.</p>
+        </div>
+
+        <div className="combo-formula">
+          {steps.map((s, i) => (
+            <div key={s.label} className="combo-formula-group">
+              <div className="combo-formula-circle" style={{ borderColor: s.borderColor, background: s.bg }}>
+                <span className="combo-formula-icon">{s.icon}</span>
+              </div>
+              <div className="combo-formula-label" style={{ color: s.color }}>{s.label}</div>
+              <div className="combo-formula-desc">{s.desc}</div>
+              {i < steps.length - 1 && <div className="combo-formula-plus">+</div>}
+            </div>
+          ))}
+          <div className="combo-formula-equals">=</div>
+          <div className="combo-formula-group combo-formula-group--result">
+            <div className="combo-formula-circle combo-formula-circle--result" style={{ borderColor: result.borderColor, background: result.bg }}>
+              <span className="combo-formula-icon">{result.icon}</span>
+            </div>
+            <div className="combo-formula-label" style={{ color: result.color }}>{result.label}</div>
+            <div className="combo-formula-desc">{result.desc}</div>
+          </div>
+        </div>
+
+        {/* SVG bottom section */}
+        <div className="combo-svg-wrap">
+          <Image
+            src="/Body.svg"
+            alt="El Combo Liiffe — resultados"
+            width={1400}
+            height={501}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </div>
       </div>
 
-      {/* MOBILE: Simple layout */}
+      {/* MOBILE */}
       <div className="combo-mobile">
         <h2 className="combo-mobile-title">
           EL COMBO <span className="hl-pink">LIIFFE</span>
         </h2>
-
-        {/* Steps pills */}
-        <div className="combo-steps-row">
-          {steps.map((s, i) => (
-            <div key={s.label} className="combo-step-pill" style={{ borderColor: s.color }}>
-              <span>{s.icon}</span>
-              <span style={{ color: s.color }}>{s.label}</span>
-              {i < steps.length - 1 && <span className="combo-arrow">→</span>}
-            </div>
-          ))}
-        </div>
-
-        {/* Results carousel */}
-        <h3 className="combo-results-title">
-          Resultados que <span className="hl-pink">impactan</span> en tu negocio
-        </h3>
-
         <div
           className="combo-carousel"
           onTouchStart={handleTouchStart}
@@ -104,21 +122,19 @@ export default function ComboSection() {
             className="combo-carousel-track"
             style={{ transform: `translateX(-${active * 100}%)` }}
           >
-            {results.map((r) => (
-              <div key={r.title} className="combo-carousel-card">
-                <div className="combo-card-icon" style={{ background: `${r.color}20`, color: r.color }}>
-                  {r.icon}
+            {mobileCards.map((c) => (
+              <div key={c.label} className="combo-carousel-card">
+                <div className="combo-card-icon" style={{ background: c.bg, color: c.color }}>
+                  {c.icon}
                 </div>
-                <div className="combo-card-title">{r.title}</div>
-                <div className="combo-card-desc">{r.desc}</div>
+                <div className="combo-card-title" style={{ color: c.color }}>{c.label}</div>
+                <div className="combo-card-desc">{c.desc}</div>
               </div>
             ))}
           </div>
         </div>
-
-        {/* Dots */}
         <div className="combo-dots">
-          {results.map((_, i) => (
+          {mobileCards.map((_, i) => (
             <div
               key={i}
               className={`combo-dot ${i === active ? 'active' : ''}`}
@@ -127,6 +143,7 @@ export default function ComboSection() {
           ))}
         </div>
       </div>
+
     </section>
   )
 }

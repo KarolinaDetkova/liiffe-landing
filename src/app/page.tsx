@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import GuestSection from '@/components/GuestSection'
+import AsiEmpiezaTodo from '@/components/AsiEmpiezaTodo'
 import ComboSection from '@/components/ComboSection'
 import PackagesSection from '@/components/PackagesSection'
 import TypesSection from '@/components/TypesSection'
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <GuestSection />
+        <AsiEmpiezaTodo />
         <ComboSection />
         <PackagesSection />
         <TypesSection />
