@@ -76,7 +76,7 @@ const CSS = `
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: var(--brand-white);
+  background: #0E1626;
   color: var(--ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
@@ -112,11 +112,11 @@ const CSS = `
   line-height: 1.05;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--gi-navy);
+  color: var(--brand-white);
   text-wrap: balance;
 }
 .gi__title b { color: var(--gi-blue); font-weight: inherit; }
-.gi__sub1 { margin: 0; font-size: clamp(14px, 1.5vw, 18px); font-weight: var(--w-regular); color: var(--gi-navy); }
+.gi__sub1 { margin: 0; font-size: clamp(14px, 1.5vw, 18px); font-weight: var(--w-regular); color: var(--brand-white); }
 .gi__sub2 { margin: 3px 0 0; font-size: clamp(14px, 1.5vw, 18px); font-weight: var(--w-bold); color: var(--gi-magenta); text-wrap: balance; }
 
 /* 3-column grid */
@@ -127,7 +127,7 @@ const CSS = `
 
 /* Column headings */
 .gi__colhead { text-align: center; margin-bottom: 18px; }
-.gi__colhead h3 { margin: 0; font-size: clamp(16px, 1.5vw, 20px); font-weight: var(--w-bold); letter-spacing: 0.01em; text-transform: uppercase; color: var(--gi-navy); }
+.gi__colhead h3 { margin: 0; font-size: clamp(16px, 1.5vw, 20px); font-weight: var(--w-bold); letter-spacing: 0.01em; text-transform: uppercase; color: var(--brand-white); }
 .gi__colhead p { margin: 2px 0 0; font-size: clamp(13px, 1.2vw, 15px); font-weight: var(--w-bold); letter-spacing: 0.02em; text-transform: uppercase; color: var(--gi-magenta); }
 
 /* Source & question cards */
@@ -164,8 +164,8 @@ const CSS = `
 .gi__center { display: grid; place-items: center; padding: 32px 12px; }
 .orbit { --ic: clamp(44px, 12%, 58px); position: relative; width: min(420px, 84vw); aspect-ratio: 1 / 1; }
 .orbit__path, .orbit__glow, .orbit__ring, .orbit__img { position: absolute; inset: 0; margin: auto; border-radius: 50%; }
-.orbit__path { width: 92%; height: 92%; border: 1.5px dashed rgba(31, 44, 73, 0.18); }
-.orbit__glow { width: 74%; height: 74%; background: radial-gradient(circle, rgba(92,116,255,0.22), rgba(255,0,140,0.12) 55%, transparent 72%); filter: blur(6px); opacity: .85; transition: opacity .5s ease, transform .5s ease; }
+.orbit__path { width: 92%; height: 92%; border: 1.5px dashed rgba(125, 136, 159, 0.61); }
+.orbit__glow { width: 74%; height: 74%; background: radial-gradient(circle, rgba(121, 134, 207, 0.67), rgba(255,0,140,0.12) 55%, transparent 72%); filter: blur(6px); opacity: .85; transition: opacity .5s ease, transform .5s ease; }
 .orbit__ring {
   width: 60%; height: 60%;
   background: conic-gradient(from 215deg, #FF008C 0%, #862BF4 26%, #5C74FF 46%, #06BFFF 66%, #00E7FF 80%, #FF008C 100%);
