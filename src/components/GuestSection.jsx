@@ -421,8 +421,8 @@ export default function GuestSection({
         ctx.stroke();
         ctx.shadowBlur = 0;
       } else {
-        ctx.lineWidth = 1.3;
-        ctx.strokeStyle = 'rgba(31,44,73,' + (0.12 + 0.04 * Math.sin(ph)).toFixed(3) + ')';
+        ctx.lineWidth = 0.8;
+       ctx.strokeStyle = 'rgba(255,255,255,' + (0.15 + 0.05 * Math.sin(ph)).toFixed(3) + ')';
         ctx.stroke();
       }
     }

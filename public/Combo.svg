@@ -1,0 +1,120 @@
+<svg width="1280" height="850" viewBox="0 0 1280 850" xmlns="http://www.w3.org/2000/svg" font-family="&#39;Geist&#39;,&#39;ABC Diatype&#39;,&#39;Helvetica Neue&#39;,Arial,sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"></stop><stop offset="1" stop-color="#F5F5F9"></stop>
+    </linearGradient>
+    <linearGradient id="gTitle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF008C"></stop><stop offset="0.5" stop-color="#862BF4"></stop><stop offset="1" stop-color="#06BFFF"></stop>
+    </linearGradient>
+    <radialGradient id="darkGlow" cx="0.5" cy="0.0" r="0.8">
+      <stop offset="0" stop-color="#5C74FF" stop-opacity="0.16"></stop><stop offset="1" stop-color="#5C74FF" stop-opacity="0"></stop>
+    </radialGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="8" stdDeviation="11" flood-color="#1F2C49" flood-opacity="0.14"></feDropShadow>
+    </filter>
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.40"></feDropShadow>
+    </filter>
+  </defs>
+
+  
+  <rect width="1280" height="430" fill="url(#bg)"></rect>
+  <g fill="none" stroke="#FF008C" stroke-opacity="0.16" stroke-width="2">
+    <path d="M-30 70 A 130 130 0 0 1 150 -10"></path><path d="M-10 95 A 150 150 0 0 1 170 12"></path>
+  </g>
+  <g fill="#862BF4" opacity="0.14">
+    <circle cx="1180" cy="22" r="3"></circle><circle cx="1205" cy="22" r="3"></circle><circle cx="1230" cy="22" r="3"></circle><circle cx="1255" cy="22" r="3"></circle>
+    <circle cx="1180" cy="47" r="3"></circle><circle cx="1205" cy="47" r="3"></circle><circle cx="1230" cy="47" r="3"></circle><circle cx="1255" cy="47" r="3"></circle>
+    <circle cx="1205" cy="72" r="3"></circle><circle cx="1230" cy="72" r="3"></circle><circle cx="1255" cy="72" r="3"></circle>
+    <circle cx="1230" cy="97" r="3"></circle><circle cx="1255" cy="97" r="3"></circle>
+  </g>
+
+  <text x="640" y="66" text-anchor="middle" font-size="52" font-weight="800" letter-spacing="0.5">
+    <tspan fill="#1F2C49">EL COMBO </tspan><tspan fill="url(#gTitle)">LIIFFE</tspan>
+  </text>
+  <text x="640" y="106" text-anchor="middle" font-size="20" font-weight="400" fill="#6B7387">Nuestra fórmula para convertir datos en ingresos.</text>
+
+  <g font-size="46" font-weight="700" fill="#3A4256" text-anchor="middle">
+    <text x="277" y="247">+</text><text x="522" y="247">+</text><text x="757" y="247">+</text><text x="1002" y="247">=</text>
+  </g>
+
+  
+  <circle cx="150" cy="230" r="64" fill="none" stroke="#FF008C" stroke-opacity="0.12" stroke-width="7"></circle>
+  <circle cx="150" cy="230" r="54" fill="#FFFFFF" stroke="#FF008C" stroke-width="2.6" filter="url(#soft)"></circle>
+  <g transform="translate(135,215) scale(1.25)" fill="none" stroke="#FF008C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></g>
+  <text x="150" y="322" text-anchor="middle" font-size="16.5" font-weight="700" letter-spacing="0.5" fill="#FF008C">DATA</text>
+  <text x="150" y="348" text-anchor="middle" font-size="13" fill="#6B7387"><tspan x="150" dy="0">Todos los datos de</tspan><tspan x="150" dy="16">tus huéspedes</tspan><tspan x="150" dy="16">en un solo lugar.</tspan></text>
+
+  
+  <circle cx="405" cy="230" r="64" fill="none" stroke="#862BF4" stroke-opacity="0.12" stroke-width="7"></circle>
+  <circle cx="405" cy="230" r="54" fill="#FFFFFF" stroke="#862BF4" stroke-width="2.6" filter="url(#soft)"></circle>
+  <g transform="translate(390,215) scale(1.25)" fill="none" stroke="#862BF4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></g>
+  <text x="405" y="322" text-anchor="middle" font-size="16.5" font-weight="700" letter-spacing="0.5" fill="#862BF4">INTELIGENCIA</text>
+  <text x="405" y="348" text-anchor="middle" font-size="13" fill="#6B7387"><tspan x="405" dy="0">Convertimos datos en</tspan><tspan x="405" dy="16">información accionable</tspan><tspan x="405" dy="16">para decidir mejor.</tspan></text>
+
+  
+  <circle cx="640" cy="230" r="64" fill="none" stroke="#5C74FF" stroke-opacity="0.12" stroke-width="7"></circle>
+  <circle cx="640" cy="230" r="54" fill="#FFFFFF" stroke="#5C74FF" stroke-width="2.6" filter="url(#soft)"></circle>
+  <g transform="translate(625,215) scale(1.25)" fill="none" stroke="#5C74FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></g>
+  <text x="640" y="322" text-anchor="middle" font-size="16.5" font-weight="700" letter-spacing="0.5" fill="#5C74FF">PERSONALIZACIÓN</text>
+  <text x="640" y="348" text-anchor="middle" font-size="13" fill="#6B7387"><tspan x="640" dy="0">Creamos experiencias</tspan><tspan x="640" dy="16">únicas para cada huésped,</tspan><tspan x="640" dy="16">en el momento perfecto.</tspan></text>
+
+  
+  <circle cx="875" cy="230" r="64" fill="none" stroke="#10B981" stroke-opacity="0.12" stroke-width="7"></circle>
+  <circle cx="875" cy="230" r="54" fill="#FFFFFF" stroke="#10B981" stroke-width="2.6" filter="url(#soft)"></circle>
+  <g transform="translate(860,215) scale(1.25)" fill="none" stroke="#10B981" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.52-4.48 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6"></path></g>
+  <text x="875" y="322" text-anchor="middle" font-size="16.5" font-weight="700" letter-spacing="0.5" fill="#10B981">SOSTENIBILIDAD</text>
+  <text x="875" y="348" text-anchor="middle" font-size="13" fill="#6B7387"><tspan x="875" dy="0">Optimizamos recursos</tspan><tspan x="875" dy="16">y operaciones para un hotel</tspan><tspan x="875" dy="16">más eficiente y rentable.</tspan></text>
+
+  
+  <circle cx="1130" cy="230" r="64" fill="none" stroke="#FF008C" stroke-opacity="0.12" stroke-width="7"></circle>
+  <circle cx="1130" cy="230" r="54" fill="#FFFFFF" stroke="#FF008C" stroke-width="2.6" filter="url(#soft)"></circle>
+  <g transform="translate(1115,215) scale(1.25)" fill="none" stroke="#FF008C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></g>
+  <text x="1130" y="322" text-anchor="middle" font-size="16.5" font-weight="700" letter-spacing="0.5" fill="#FF008C">INGRESOS</text>
+  <text x="1130" y="348" text-anchor="middle" font-size="13" fill="#6B7387"><tspan x="1130" dy="0">Más valor por huésped y</tspan><tspan x="1130" dy="16">mejores resultados para</tspan><tspan x="1130" dy="16">tu alojamiento.</tspan></text>
+
+  
+  <rect x="0" y="430" width="1280" height="420" fill="#0E1A33"></rect>
+  <rect x="0" y="430" width="1280" height="420" fill="url(#darkGlow)"></rect>
+  <rect x="0" y="430" width="1280" height="3" fill="url(#gTitle)"></rect>
+
+  <text x="640" y="512" text-anchor="middle" font-size="34" font-weight="800" letter-spacing="0.2">
+    <tspan fill="#FFFFFF">Resultados que </tspan><tspan fill="url(#gTitle)">impactan directamente</tspan><tspan fill="#FFFFFF"> en tu negocio</tspan>
+  </text>
+
+  
+  <rect x="40" y="566" width="219" height="224" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+  <rect x="124" y="590" width="50" height="50" rx="14" fill="#FFE0F0"></rect>
+  <g transform="translate(135,601) scale(1.16)" fill="none" stroke="#FF008C" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></g>
+  <text x="149" y="682" text-anchor="middle" font-size="15" font-weight="700" fill="#0E1626"><tspan x="149" dy="0">Incrementa el gasto</tspan><tspan x="149" dy="18">por huésped</tspan></text>
+  <text x="149" y="730" text-anchor="middle" font-size="12.5" fill="#6B7387"><tspan x="149" dy="0">Recomendaciones y ofertas</tspan><tspan x="149" dy="16">personalizadas que aumentan</tspan><tspan x="149" dy="16">el ticket medio.</tspan></text>
+
+  
+  <rect x="285" y="566" width="219" height="224" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+  <rect x="369" y="590" width="50" height="50" rx="14" fill="#FFE0F0"></rect>
+  <g transform="translate(380,601) scale(1.16)" fill="none" stroke="#FF008C" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></g>
+  <text x="394" y="682" text-anchor="middle" font-size="15" font-weight="700" fill="#0E1626"><tspan x="394" dy="0">Impulsa la venta de</tspan><tspan x="394" dy="18">servicios</tspan></text>
+  <text x="394" y="730" text-anchor="middle" font-size="12.5" fill="#6B7387"><tspan x="394" dy="0">Más reservas de restaurante,</tspan><tspan x="394" dy="16">spa, actividades, upgrades</tspan><tspan x="394" dy="16">y experiencias.</tspan></text>
+
+  
+  <rect x="530" y="566" width="219" height="224" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+  <rect x="614" y="590" width="50" height="50" rx="14" fill="#E0F6FF"></rect>
+  <g transform="translate(625,601) scale(1.16)" fill="none" stroke="#06BFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></g>
+  <text x="639" y="682" text-anchor="middle" font-size="15" font-weight="700" fill="#0E1626"><tspan x="639" dy="0">Mejora la experiencia</tspan><tspan x="639" dy="18">del huésped</tspan></text>
+  <text x="639" y="730" text-anchor="middle" font-size="12.5" fill="#6B7387"><tspan x="639" dy="0">Información relevante en el</tspan><tspan x="639" dy="16">momento adecuado para</tspan><tspan x="639" dy="16">cada cliente.</tspan></text>
+
+  
+  <rect x="775" y="566" width="219" height="224" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+  <rect x="859" y="590" width="50" height="50" rx="14" fill="#EEE1FD"></rect>
+  <g transform="translate(870,601) scale(1.16)" fill="none" stroke="#862BF4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></g>
+  <text x="884" y="682" text-anchor="middle" font-size="15" font-weight="700" fill="#0E1626"><tspan x="884" dy="0">Aumenta la fidelización</tspan><tspan x="884" dy="18">y la repetición</tspan></text>
+  <text x="884" y="730" text-anchor="middle" font-size="12.5" fill="#6B7387"><tspan x="884" dy="0">Los huéspedes vuelven</tspan><tspan x="884" dy="16">cuando sienten que los</tspan><tspan x="884" dy="16">conocemos.</tspan></text>
+
+  
+  <rect x="1020" y="566" width="219" height="224" rx="16" fill="#FFFFFF" filter="url(#cardShadow)"></rect>
+  <rect x="1104" y="590" width="50" height="50" rx="14" fill="#FFE0F0"></rect>
+  <g transform="translate(1115,601) scale(1.16)" fill="none" stroke="#FF008C" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></g>
+  <text x="1129" y="682" text-anchor="middle" font-size="15" font-weight="700" fill="#0E1626"><tspan x="1129" dy="0">Obtén una visión 360°</tspan><tspan x="1129" dy="18">de tus huéspedes</tspan></text>
+  <text x="1129" y="730" text-anchor="middle" font-size="12.5" fill="#6B7387"><tspan x="1129" dy="0">Toda la información</tspan><tspan x="1129" dy="16">centralizada, segmentada y</tspan><tspan x="1129" dy="16">accionable en tiempo real.</tspan></text>
+
+</svg>

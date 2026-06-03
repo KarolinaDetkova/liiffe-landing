@@ -624,7 +624,8 @@ export default function AsiEmpiezaTodo({
 
           {/* MERGE node */}
           <div className="ae__merge reveal">
-            <div className="merge__node"><img src={logoSrc} alt="Liiffe" /></div>
+            <div className="merge__node"><img src={logoSrc} alt="Liiffe" style={{ background: '#1F2C49', padding: '8px', borderRadius: '24px' }} />
+            </div>
           </div>
 
           {/* RIGHT: hotel intelligence dashboard */}
