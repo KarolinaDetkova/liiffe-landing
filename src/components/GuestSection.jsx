@@ -262,6 +262,12 @@ const CSS = `
   .gi__col--left { grid-column: 1; grid-row: 2; }
   .gi__col--right { grid-column: 2; grid-row: 2; }
 }
+@media (max-width: 639px) {
+  .gi__col--left  { order: 1; }
+  .gi__center     { order: 2; }
+  .gi__col--right { order: 3; }
+  .gi__grid       { display: flex; flex-direction: column; align-items: center; }
+}
 @media (min-width: 1024px) {
   .gi__grid { grid-template-columns: minmax(240px, 1fr) auto minmax(240px, 1fr); align-items: center; column-gap: clamp(28px, 4vw, 64px); }
   .gi__center { grid-column: 2; grid-row: 1; }

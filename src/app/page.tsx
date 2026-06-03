@@ -1,3 +1,6 @@
+'use client'
+
+import { useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import GuestSection from '@/components/GuestSection'
@@ -7,10 +10,15 @@ import PackagesSection from '@/components/PackagesSection'
 import TypesSection from '@/components/TypesSection'
 import CTASection from '@/components/CTASection'
 import Footer from '@/components/Footer'
+import SplashScreen from '@/components/SplashScreen'
+import useScrollReveal from '@/hooks/useScrollReveal'
 
 export default function Home() {
+  useScrollReveal()
+
   return (
     <>
+      <SplashScreen />
       <Navbar />
       <main>
         <Hero />
