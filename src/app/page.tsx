@@ -25,7 +25,13 @@ export default function Home() {
         <GuestSection imageSrc="/user icon.jpg" />
         <AsiEmpiezaTodo />
         <ComboSection />
-        <PackagesSection />
+        <PackagesSection 
+          logoSrc="/logo.svg"
+          experienceSrc="/paquete-experience.png"
+          intelligenceSrc="/paquete-intelligence.png"
+          studioSrc="/paquete-studio.png"
+          connectSrc="/paquete-connect.png"
+        />
         <TypesSection />
         <CTASection />
       </main>

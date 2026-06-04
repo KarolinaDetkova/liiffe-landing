@@ -303,7 +303,14 @@ const CSS = `
 .ae__col--data { grid-area: data; }
 .ae__merge { grid-area: merge; }
 .ae__panel--hotel { grid-area: hotel; }
+.ae__col--data { position: relative; }
+.ae__col--data::before { content: ''; position: absolute; left: 50%; top: -20px; transform: translateX(-50%); width: 2px; height: 20px; background: linear-gradient(to bottom, transparent, var(--ae-purple)); }
+.ae__col--data::after { content: ''; position: absolute; left: 50%; bottom: -20px; transform: translateX(-50%); width: 2px; height: 20px; background: linear-gradient(to bottom, var(--ae-purple), transparent); }
+.ae__merge::before { content: ''; position: absolute; left: 50%; top: -20px; transform: translateX(-50%); width: 2px; height: 20px; background: linear-gradient(to bottom, transparent, var(--ae-magenta)); }
+.ae__merge::after { content: ''; position: absolute; left: 50%; bottom: -20px; transform: translateX(-50%); width: 2px; height: 20px; background: linear-gradient(to bottom, var(--ae-magenta), transparent); }
+
 @media (min-width: 720px) {
+  .ae__col--data::before, .ae__col--data::after, .ae__merge::before, .ae__merge::after { display: none; }
   .ae__flow { grid-template-columns: 1fr 1fr; grid-template-areas: "guest hotel" "data merge"; align-items: start; column-gap: clamp(24px, 4vw, 52px); row-gap: clamp(22px, 4vh, 40px); }
   .ae__col--data { justify-self: center; }
   .ae .blocks { flex-flow: row wrap; max-width: 560px; justify-content: center; }
